@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency converter</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Creepster&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+<div class="head">
+    <h1 class="heading">Currency <br> Converter</h1>
+</div>
+
+<div class="mainbox">
+    <div class="maincontainer">
+        <form action="" class="amount">
+            <div class="curr">
+                <label for="amountbox">Enter Amount</label>
+                <input type="text" name="amountbox" id="amountbox" value="1"> 
+            </div>
+            <div class="dropdown">
+                <div class="fromDD">  
+                    <p>FROM</p>
+                    <div class="select-country">
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                        <select name="fromselc" id="fromselc">
+                        </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div class="toDD">
+                    <p>TO</p>
+                    <div class="select-country">
+                        <img src="https://flagsapi.com/IN/flat/64.png">
+                        <select name="toselc" id="toselc">
+                        </select>
+                    </div>
+                </div>
+            </div>
+                <div class="ratemsg">
+                    <p>1 USD = 91.58 INR</p>
+                </div>
+                <div class="btn">
+                    <button>Get Exchange Rate</button>
+                </div>
+        </form>
+
+    </div>
+</div>
+    
+
+<script src="./codes.js"></script>
+<script src="./currencyconverter.js"></script>
+</body>
+</html>
